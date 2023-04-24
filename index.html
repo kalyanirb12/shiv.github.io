@@ -40,19 +40,19 @@
 
 
 
-            // otherlink
-            AFRAME.registerComponent('otherpoint-handler', {
+            // documnets link
+            AFRAME.registerComponent('documentspoint-handler', {
             
             init: function() {
                 //console.log("I was triggered");
                 const marker1 = document.querySelector("#marker1");
-                const imgOther = document.querySelector("#img-other");
+                const imgDocuments = document.querySelector("#img-documents");
                 
                 marker1.addEventListener('click', function(ev, target) {
                     const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
-                if (imgOther && intersectedElement === imgOther) {
+                if (imgDocuments && intersectedElement === imgDocuments) {
                     console.log("Clicked");
-                    document.location.href = "https://www.canva.com/design/DAFbYYyufIk/NsOaru6KO196FKKCqN7aYQ/edit";
+                    document.location.href = "https://kalyanirb12.github.io/rohini.github.io/";
                 }
                 });
             }
@@ -96,7 +96,7 @@
 		        const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
 			if (imgMap && intersectedElement === imgMap) {
 			    console.log("Clicked");
-			    document.location.href = "https://goo.gl/maps/gRsth6SHo5AgwMbT7";
+			    document.location.href = "https://goo.gl/maps/a44dVaEwR6kArQef7";
 			}
 		    });
 		}
@@ -118,9 +118,9 @@
                     <source  src="videos/introduction.mp4">
                 </video>
 
-                <!-- other point Image -->
+                <!-- Documents Image -->
 
-                <img id="other-point" src="images/github-cover.jpg">
+                <img id="documents-point" src="images/documents-cover.png">
 
                 <!-- github point Image -->
 
@@ -164,7 +164,15 @@
                 <!--<a-box position='0 0 0' material='color: red;'></a-box>-->
                 <a-plane id="img-map" scale = "2 2" position='0 0.1 0' rotation="-90 0 0" material='transparent:true;src:#map-point'></a-plane>
                 <!--<a-entity text="font: https://cdn.aframe.io/fonts/mozillavr.fnt; value: Fun Moments"></a-entity>-->
-            </a-marker>     
+            </a-marker>   
+            <!-- documents Marker -->
+
+            <a-marker id="marker4" type='pattern' url='markers/documents-pattern-marker.patt' emitevents="true" cursor="rayOrigin: mouse" documentspoint-handler>
+                <!--<a-box position='0 0 0' material='color: red;'></a-box>-->
+                <a-plane id="img-map" scale = "2 2" position='0 0.1 0' rotation="-90 0 0" material='transparent:true;src:#documents-point'></a-plane>
+                <!--<a-entity text="font: https://cdn.aframe.io/fonts/mozillavr.fnt; value: Fun Moments"></a-entity>-->
+            </a-marker>   
+            
             
             
             <!-- Camera -->
