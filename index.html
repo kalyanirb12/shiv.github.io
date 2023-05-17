@@ -52,13 +52,15 @@
                     const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
                 if (imgDocuments && intersectedElement === imgDocuments) {
                     console.log("Clicked");
-                    document.location.href = "https://kalyanirb12.github.io/rohini.github.io/";
+                    document.location.href = "https://rohinidevkar.github.io/docs.github.io/";
                 }
                 });
             }
             });
            
-                       
+    
+
+
         
            
            
@@ -119,6 +121,7 @@
                 </video>
 
                 <!-- Documents Image -->
+                
 
                 <img id="documents-point" src="images/documents-cover.png">
 
@@ -152,7 +155,7 @@
 
             <a-marker id="marker2" type='pattern' url='markers/github-pattern-marker.patt' emitevents="true" cursor="rayOrigin: mouse" githubpoint-handler>
                 <!--<a-box position='0 0 0' material='color: red;'></a-box>-->
-                <a-plane id="img-github" scale = "2 2" position='0 0.1 0' rotation="-90 0 0" material='transparent:true;src:#github-point'></a-plane>
+                <a-plane id="img-github" scale = "2 1" position='0 0.1 0' rotation="-90 0 0" material='transparent:true;src:#github-point'></a-plane>
                 <!--<a-entity text="font: https://cdn.aframe.io/fonts/mozillavr.fnt; value: Fun Moments"></a-entity>-->
             </a-marker>    
             
@@ -169,7 +172,7 @@
 
             <a-marker id="marker4" type='pattern' url='markers/documents-pattern-marker.patt' emitevents="true" cursor="rayOrigin: mouse" documentspoint-handler>
                 <!--<a-box position='0 0 0' material='color: red;'></a-box>-->
-                <a-plane id="img-map" scale = "2 2" position='0 0.1 0' rotation="-90 0 0" material='transparent:true;src:#documents-point'></a-plane>
+                <a-plane id="img-map" scale = "2 3" position='0 0.1 0' rotation="-90 0 0" material='transparent:true;src:#documents-point'></a-plane>
                 <!--<a-entity text="font: https://cdn.aframe.io/fonts/mozillavr.fnt; value: Fun Moments"></a-entity>-->
             </a-marker>   
             
